@@ -6,7 +6,7 @@ module.exports = {
       paciente_id: {
         type: DataTypes.INTEGER,
         references: {
-          model: Pacientes,
+          tableName: 'pacientes',
           key: "id",
         },
       },

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sequelize db:migrate",
+    "build": "npm i && npx sequelize db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=prod && node src/app.js",
     "dev": "nodemon -r dotenv/config src/app.js dotenv_config_path=.env.prod"
